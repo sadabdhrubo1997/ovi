@@ -1,3 +1,8 @@
+if (!localStorage.getItem("theme")) {
+    localStorage.setItem("theme", "light")
+}
+
+localStorage.setItem("sidebarCollupsed", "false")
 // Responsive html font size
 let iw = window.innerWidth;
 let rootScreenWidth = 1366;
@@ -328,7 +333,6 @@ let mobileSearchBoxCross = document.querySelector("#mobileSearchBoxCross")
 
 // mobile side menu
 let mobileHamberger = document.querySelector("#mobileHamberger")
-
 
 mobileSearch.addEventListener("click", function () {
     mobileSearchBox.classList.add("show")
