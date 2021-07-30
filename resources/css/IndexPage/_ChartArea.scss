@@ -27,11 +27,19 @@
                 margin-right: 1.4rem;
             }
 
+          .heading{
             h2 {
                 font-weight: 700;
                 font-size: 2.4rem;
                 color: #000;
             }
+
+            p{
+                font-size: 1.4rem;
+                color: #000;
+                font-weight: 400;
+            }
+          }
         }
 
         .right {
@@ -89,19 +97,25 @@
 
 
 #ChartWrapper.dark {
-    background-color: rgba(18, 28, 53, 1);
+    background-color: rgba(28, 29, 35, 1);
 
 
     .TopArea {
         .left {
-            h2 {
-                color: rgb(255, 255, 255);
+            .heading{
+
+                h2 {
+                    color: rgb(255, 255, 255);
+                }
+                p{
+                    color: #fff;
+                }
             }
         }
 
         .right {
             .filterArea {
-                background-color: rgba(14, 22, 46, 1);
+                background-color: rgba(24, 26, 30, 1);
 
 
                 a {
@@ -110,13 +124,13 @@
 
 
                     &:hover {
-                        background-color: rgb(18, 28, 53);
+                        background-color: rgba(28, 29, 35, 1);
                         color: rgba(240, 97, 17, 1);
                     }
                 }
 
                 a.active {
-                    background-color: rgb(18, 28, 53);
+                    background-color: rgba(28, 29, 35, 1);
                     color: rgba(240, 97, 17, 1);
                 }
             }

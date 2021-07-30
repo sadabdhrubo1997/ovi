@@ -50,6 +50,7 @@
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
+                margin-right: 0.5rem;
 
                 span {
                     position: relative;
@@ -91,6 +92,16 @@
                     color: #fff;
                 }
             }
+
+            button:hover {
+                &::after {
+                    opacity: 1;
+                }
+
+                span {
+                    color: #fff;
+                }
+            }
         }
 
 
@@ -118,7 +129,7 @@
 
                             td {
                                 padding: 1.5rem;
-                                text-align: center;
+                                text-align: left;
 
                                 div {
                                     display: flex;
@@ -363,6 +374,7 @@
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
+                margin-right: 0.5rem;
 
                 span {
                     position: relative;
@@ -396,6 +408,16 @@
             }
 
             button.active {
+                &::after {
+                    opacity: 1;
+                }
+
+                span {
+                    color: #fff;
+                }
+            }
+
+            button:hover {
                 &::after {
                     opacity: 1;
                 }
@@ -452,6 +474,7 @@
                                 -moz-border-radius: .6rem;
                                 -ms-border-radius: .6rem;
                                 -o-border-radius: .6rem;
+                                justify-self: right;
                             }
                         }
 
@@ -472,9 +495,33 @@
                                 align-items: center;
                                 text-decoration: none;
                                 color: rgba(240, 97, 17, 1);
+                                transition: .2s;
+                                -webkit-transition: .2s;
+                                -moz-transition: .2s;
+                                -ms-transition: .2s;
+                                -o-transition: .2s;
+                                background-color: rgba(240, 99, 17, 0);
 
                                 img {
                                     width: 1.9rem;
+                                    transition: .2s;
+                                    -webkit-transition: .2s;
+                                    -moz-transition: .2s;
+                                    -ms-transition: .2s;
+                                    -o-transition: .2s;
+                                    filter: brightness(100%) invert(0);
+                                    -webkit-filter: brightness(100%) invert(0);
+                                }
+
+                                &:hover {
+                                    background-color: rgba(240, 97, 17, 1);
+                                    color: rgb(255, 255, 255);
+
+
+                                    img {
+                                        filter: brightness(0) invert(1);
+                                        -webkit-filter: brightness(0) invert(1);
+                                    }
                                 }
                             }
                         }
@@ -551,9 +598,33 @@
                                 align-items: center;
                                 text-decoration: none;
                                 color: rgba(240, 97, 17, 1);
+                                transition: .2s;
+                                -webkit-transition: .2s;
+                                -moz-transition: .2s;
+                                -ms-transition: .2s;
+                                -o-transition: .2s;
+                                background-color: rgba(240, 99, 17, 0);
 
                                 img {
                                     width: 1.9rem;
+                                    transition: .2s;
+                                    -webkit-transition: .2s;
+                                    -moz-transition: .2s;
+                                    -ms-transition: .2s;
+                                    -o-transition: .2s;
+                                    filter: brightness(100%) invert(0);
+                                    -webkit-filter: brightness(100%) invert(0);
+                                }
+
+                                &:hover {
+                                    background-color: rgba(240, 97, 17, 1);
+                                    color: rgb(255, 255, 255);
+
+
+                                    img {
+                                        filter: brightness(0) invert(1);
+                                        -webkit-filter: brightness(0) invert(1);
+                                    }
                                 }
                             }
                         }
@@ -631,9 +702,33 @@
                                 align-items: center;
                                 text-decoration: none;
                                 color: rgba(240, 97, 17, 1);
+                                transition: .2s;
+                                -webkit-transition: .2s;
+                                -moz-transition: .2s;
+                                -ms-transition: .2s;
+                                -o-transition: .2s;
+                                background-color: rgba(240, 99, 17, 0);
 
                                 img {
                                     width: 1.9rem;
+                                    transition: .2s;
+                                    -webkit-transition: .2s;
+                                    -moz-transition: .2s;
+                                    -ms-transition: .2s;
+                                    -o-transition: .2s;
+                                    filter: brightness(100%) invert(0);
+                                    -webkit-filter: brightness(100%) invert(0);
+                                }
+
+                                &:hover {
+                                    background-color: rgba(240, 97, 17, 1);
+                                    color: rgb(255, 255, 255);
+
+
+                                    img {
+                                        filter: brightness(0) invert(1);
+                                        -webkit-filter: brightness(0) invert(1);
+                                    }
                                 }
                             }
                         }
@@ -656,20 +751,12 @@
 
 .indexChartBottomArea.dark {
     .left {
-
-
         .filterArea {
-
-            background-color: #121C35;
-
+            background-color: rgba(28, 29, 35, 1);
 
             button {
-
-
                 span {
-
                     color: #ffffff;
-
                 }
 
                 &::after {
@@ -701,6 +788,17 @@
                     color: #fff;
                 }
             }
+
+            button:hover {
+                &::after {
+                    opacity: 1;
+
+                }
+
+                span {
+                    color: #fff;
+                }
+            }
         }
 
 
@@ -708,7 +806,7 @@
             .inner {
                 #indexMostProftableTrades {
 
-                    background: rgba(18, 28, 53, 1);
+                    background: rgba(28, 29, 35, 1);
 
 
                     table {
@@ -739,7 +837,6 @@
                                     span {
                                         font-weight: 500;
                                     }
-
                                 }
 
                                 .badge {
@@ -772,7 +869,7 @@
                     .singleItem {
                         width: 31%;
                         margin-bottom: 2.7rem;
-                        background-color: rgba(18, 28, 53, 1);
+                        background-color: rgba(28, 29, 35, 1);
                         border-radius: 1rem;
                         -webkit-border-radius: 1rem;
                         -moz-border-radius: 1rem;
@@ -860,15 +957,16 @@
                     flex-wrap: wrap;
 
                     .singleItem {
-                       
-                        background-color: rgba(18, 28, 53, 1);
-                        img{
+
+                        background-color: rgba(28, 29, 35, 1);
+
+                        img {
                             margin-right: 2rem;
 
                         }
-                    
 
-                    
+
+
                         .right {
                             height: 100%;
                             display: flex;
@@ -913,9 +1011,9 @@
     }
 
     .right {
-      
+
         .filterArea {
-            background-color: rgba(18, 28, 53, 1);
+            background-color: rgba(28, 29, 35, 1);
 
             button {
                 span {
@@ -958,11 +1056,21 @@
                     color: rgb(255, 255, 255);
                 }
             }
+
+            button:hover {
+                &::after {
+                    opacity: 1;
+                }
+
+                span {
+                    color: rgb(255, 255, 255);
+                }
+            }
         }
 
         .inner {
             #indexOngoinCompetition {
-                background-color: rgba(18, 28, 53, 1);
+                background-color: rgba(28, 29, 35, 1);
                 padding: 1rem;
                 border-radius: 1rem;
                 -webkit-border-radius: 1rem;
@@ -1015,10 +1123,14 @@
                             justify-content: center;
 
                             a {
-                                
+
                                 border: .1rem solid rgba(240, 97, 17, 1);
-                              
+
                                 color: rgba(240, 97, 17, 1);
+
+                                &:hover{
+                                    color: #ffffff;
+                                }
 
                             }
                         }
@@ -1031,13 +1143,13 @@
             }
 
             #indexCompletedCompetition {
-                background-color: rgba(18, 28, 53, 1);
-         
+                background-color: rgba(28, 29, 35, 1);
+
 
                 .table {
-               
+
                     color: #ffffff;
-                  
+
 
                     .tr {
                         width: 100%;
@@ -1091,6 +1203,10 @@
                                 img {
                                     width: 1.9rem;
                                 }
+
+                                &:hover{
+                                    color: #ffffff;
+                                }
                             }
                         }
                     }
@@ -1102,7 +1218,7 @@
             }
 
             #indexMyCompetition {
-                background-color: rgba(18, 28, 53, 1);
+                background-color: rgba(28, 29, 35, 1);
                 padding: 1rem;
                 border-radius: 1rem;
                 -webkit-border-radius: 1rem;
@@ -1170,6 +1286,10 @@
 
                                 img {
                                     width: 1.9rem;
+                                }
+
+                                &:hover{
+                                    color: #ffffff;
                                 }
                             }
                         }
@@ -1375,7 +1495,7 @@
                                 display: block;
                                 width: 5rem;
                                 margin-right: 0.5rem;
-                                
+
                             }
 
                             .time {
@@ -1515,7 +1635,7 @@
 
         .right {
             width: 100%;
-    
+
             .filterArea {
                 padding: .7rem;
                 background-color: #fff;
@@ -1526,7 +1646,7 @@
                 -o-border-radius: 1rem;
                 margin-bottom: 2rem;
                 justify-content: space-between;
-    
+
                 button {
                     padding: 1.7rem 1.4rem;
                     position: relative;
@@ -1551,7 +1671,7 @@
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
-    
+
                     span {
                         position: relative;
                         z-index: 999;
@@ -1563,7 +1683,7 @@
                         -o-transition: .3s;
                         font-size: 1.3rem;
                     }
-    
+
                     &::after {
                         position: absolute;
                         content: '';
@@ -1583,18 +1703,18 @@
                         opacity: 0;
                     }
                 }
-    
+
                 button.active {
                     &::after {
                         opacity: 1;
                     }
-    
+
                     span {
                         color: #fff;
                     }
                 }
             }
-    
+
             .inner {
                 #indexOngoinCompetition {
                     background-color: #fff;
@@ -1605,32 +1725,32 @@
                     -ms-border-radius: 1rem;
                     -o-border-radius: 1rem;
                     padding-top: 0;
-    
+
                     .table {
                         width: 100%;
                         font-size: 1.8rem;
                         font-weight: 500;
                         color: #000000;
                         padding-bottom: .7rem;
-    
+
                         .tr {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
                             border-bottom: .1rem solid rgba(0, 0, 0, 0.05);
                             padding: 1.7rem 0;
-    
+
                             .td {
                                 display: flex;
                                 align-items: center;
                                 font-weight: 700;
-    
+
                                 img {
                                     width: 4.2rem;
                                     margin-right: 1.5rem;
                                 }
                             }
-    
+
                             .progress {
                                 .badge {
                                     background-color: rgba(37, 150, 231, 0.1);
@@ -1643,12 +1763,12 @@
                                     -o-border-radius: .6rem;
                                 }
                             }
-    
+
                             .viewBtn {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-    
+
                                 a {
                                     padding: 1rem 2rem;
                                     border: .1rem solid rgba(240, 97, 17, 1);
@@ -1661,20 +1781,20 @@
                                     align-items: center;
                                     text-decoration: none;
                                     color: rgba(240, 97, 17, 1);
-    
+
                                     img {
                                         width: 1.9rem;
                                     }
                                 }
                             }
                         }
-    
+
                         .tr:last-child {
                             border: none;
                         }
                     }
                 }
-    
+
                 #indexCompletedCompetition {
                     background-color: #fff;
                     padding: 1rem;
@@ -1684,32 +1804,32 @@
                     -ms-border-radius: 1rem;
                     -o-border-radius: 1rem;
                     padding-top: 0;
-    
+
                     .table {
                         width: 100%;
                         font-size: 1.8rem;
                         font-weight: 500;
                         color: #000000;
                         padding-bottom: .7rem;
-    
+
                         .tr {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
                             border-bottom: .1rem solid rgba(0, 0, 0, 0.05);
                             padding: 1.7rem 0;
-    
+
                             .td {
                                 display: flex;
                                 align-items: center;
                                 font-weight: 700;
-    
+
                                 img {
                                     width: 4.2rem;
                                     margin-right: 1.5rem;
                                 }
                             }
-    
+
                             .progress {
                                 .badge {
                                     background-color: rgba(26, 216, 91, 0.1);
@@ -1722,12 +1842,12 @@
                                     -o-border-radius: .6rem;
                                 }
                             }
-    
+
                             .viewBtn {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-    
+
                                 a {
                                     padding: 1rem 2rem;
                                     border: .1rem solid rgba(240, 97, 17, 1);
@@ -1740,20 +1860,20 @@
                                     align-items: center;
                                     text-decoration: none;
                                     color: rgba(240, 97, 17, 1);
-    
+
                                     img {
                                         width: 1.9rem;
                                     }
                                 }
                             }
                         }
-    
+
                         .tr:last-child {
                             border: none;
                         }
                     }
                 }
-    
+
                 #indexMyCompetition {
                     background-color: #fff;
                     padding: 1rem;
@@ -1763,33 +1883,33 @@
                     -ms-border-radius: 1rem;
                     -o-border-radius: 1rem;
                     padding-top: 0;
-    
+
                     .table {
                         width: 100%;
                         font-size: 1.8rem;
                         font-weight: 500;
                         color: #000000;
                         padding-bottom: .7rem;
-    
-    
+
+
                         .tr {
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
                             border-bottom: .1rem solid rgba(0, 0, 0, 0.05);
                             padding: 1.7rem 0;
-    
+
                             .td {
                                 display: flex;
                                 align-items: center;
                                 font-weight: 700;
-    
+
                                 img {
                                     width: 4.2rem;
                                     margin-right: 1.5rem;
                                 }
                             }
-    
+
                             .progress {
                                 .badge {
                                     background-color: rgba(26, 216, 91, 0.1);
@@ -1802,12 +1922,12 @@
                                     -o-border-radius: .6rem;
                                 }
                             }
-    
+
                             .viewBtn {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-    
+
                                 a {
                                     padding: 1rem 2rem;
                                     border: .1rem solid rgba(240, 97, 17, 1);
@@ -1820,21 +1940,21 @@
                                     align-items: center;
                                     text-decoration: none;
                                     color: rgba(240, 97, 17, 1);
-    
+
                                     img {
                                         width: 1.9rem;
                                     }
                                 }
                             }
                         }
-    
+
                         .tr:last-child {
                             border: none;
                         }
                     }
                 }
             }
-    
+
             .inner.fadeAnimation {
                 animation: myFadeAnimation .3s linear infinite;
                 -webkit-animation: myFadeAnimation .3s linear infinite;

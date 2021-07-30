@@ -298,7 +298,7 @@ async function printBtcChart() {
                     tooltipEl.style.padding = tooltipModel.yPadding + 'px ' + tooltipModel.xPadding + 'px';
                     tooltipEl.style.pointerEvents = 'none';
                     // tooltipEl.style.backgroundColor = '#fff';
-                    tooltipEl.style.backgroundColor = localStorage.getItem("theme") === "dark" ? "#0E162E" : "#fff";
+                    tooltipEl.style.backgroundColor = localStorage.getItem("theme") === "dark" ? "rgba(24, 26, 30, 1)" : "#fff";
                     tooltipEl.style.boxShadow = '6px 7px 34px rgba(25, 11, 75, 0.1)';
                     tooltipEl.style.borderRadius = '7px';
                     tooltipEl.style.color = localStorage.getItem("theme") === "dark" ? "#fff" : "#000000";

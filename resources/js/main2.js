@@ -1,9 +1,9 @@
-// if (!localStorage.getItem("theme")) {
-//     localStorage.setItem("theme", "light")
-// }
-// if (!localStorage.getItem("sidebarCollupsed")) {
-//     localStorage.setItem("sidebarCollupsed", "true")
-// }
+ if (!localStorage.getItem("theme")) {
+     localStorage.setItem("theme", "light")
+ }
+ if (!localStorage.getItem("sidebarCollupsed")) {
+     localStorage.setItem("sidebarCollupsed", "true")
+ }
 
 // Responsive html font size
 let iw = window.innerWidth;
@@ -118,12 +118,13 @@ themeSelector.addEventListener("click", function () {
     indexChartBottomArea.classList.toggle("dark")
 
     if (localStorage.getItem("theme") === "dark") {
-        localStorage.setItem("theme", "light")
         mainLogo.src = './resources/icons/sidebar_icons/sidebarlogo2.png'
+        localStorage.setItem("theme", "light")
+        
 
-    } else if (localStorage.getItem("theme") === "light") {
-        localStorage.setItem("theme", "dark")
+    } else if (localStorage.getItem("theme") === "light") {        
         mainLogo.src = './resources/icons/sidebar_icons/darkModeLogo.png'
+        localStorage.setItem("theme", "dark")
     }
 })
 

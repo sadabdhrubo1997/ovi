@@ -359,7 +359,7 @@
             }
 
             .languageDropdown {
-                width: 10rem;
+                width: 13rem;
                 height: 3rem;
                 margin-right: 2rem;
                 position: relative;
@@ -412,7 +412,7 @@
 
                 .dropdownMenu {
                     position: absolute;
-                    top: 105%;
+                    top: 110%;
                     left: 0;
                     right: 0;
 
@@ -421,7 +421,7 @@
                         width: 100%;
                         background-color: rgb(255, 255, 255);
                         box-shadow: 0 1rem 20px rgba(0, 0, 0, 0.1);
-                        padding: .5rem;
+                     
 
 
                         li {
@@ -432,16 +432,25 @@
                             margin-bottom: 0.5rem;
                             color: #000000;
                             cursor: pointer;
+                            background: linear-gradient(90.93deg, rgba(250, 106, 29, 0) 4.2%, rgba(250, 91, 28, 0) 97.89%);
+                            padding: 2rem 1rem;
+                            // margin-bottom: 1rem;
 
                             span {
                                 font-size: 1.8rem;
+                                padding: 1rem;
                             }
 
                             img {
-                                width: 3rem;
+                                width: 2rem;
                                 height: auto;
-                                margin-right: 1rem;
+                                margin-right: .5rem;
                             }
+
+                            &:hover {
+                                background: linear-gradient(90.93deg, rgba(250, 107, 29, 0.21) 4.2%, rgba(250, 92, 28, 0.04) 97.89%);
+                            }
+
 
                         }
                     }
@@ -471,17 +480,23 @@
                     width: 15rem;
                     background-color: #fff;
                     box-shadow: -.5rem 1rem 20px rgba(0, 0, 0, 0.1);
-                    padding: 1rem;
                     display: none;
 
                     ul {
                         list-style: none;
 
                         li {
-                            margin-bottom: 0.5rem;
+
                             padding: .6rem 0;
                             text-align: left;
                             padding-left: .5rem;
+                            background: none;
+                            padding: 1rem;
+
+
+                            &:hover {
+                                background: linear-gradient(90.93deg, rgba(250, 107, 29, 0.21) 4.2%, rgba(250, 92, 28, 0.04) 97.89%);
+                            }
 
 
                             a {
@@ -509,7 +524,7 @@
 
 //dark mode ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #topbar.dark {
-    background-color: rgba(18, 28, 53, 1);
+    background-color: rgba(28, 29, 35, 1);
     border-bottom: .1rem solid rgba(0, 0, 0, 0.08);
 
     .left {
@@ -519,7 +534,7 @@
             position: relative;
 
             &::after {
-                background-color: rgba(18, 28, 53, 1);
+                background-color: rgba(28, 29, 35, 1);
             }
 
             a {
@@ -544,7 +559,7 @@
         .sidebarTogglesButton {
             height: 3.6rem;
             width: 3.6rem;
-            background: linear-gradient(180deg, #F82B19 0%, #FED80C 100%);
+            background: rgba(248, 248, 248, 0.05);
 
             .inner {
                 .line {
@@ -718,7 +733,7 @@
             }
 
             .themeSelector.dark {
-                background-color: rgb(15, 20, 31);
+                background-color: rgba(24, 26, 30, 1);
 
                 .lightLabel {
                     color: rgba(101, 101, 101, 1);
@@ -733,13 +748,13 @@
                 }
 
                 .switch {
-                    background-color: rgb(8, 14, 29);
+                    background-color: rgba(24, 26, 30, 1);
                     left: 18%;
                 }
             }
 
             .languageDropdown {
-                width: 10rem;
+                width: 13rem;
                 height: 3rem;
                 margin-right: 2rem;
                 position: relative;
@@ -791,18 +806,10 @@
                 }
 
                 .dropdownMenu {
-                    position: absolute;
-                    top: 105%;
-                    left: 0;
-                    right: 0;
 
                     ul {
-                        list-style: none;
-                        width: 100%;
-                        background-color: rgb(255, 255, 255);
-                        box-shadow: 0 1rem 20px rgba(0, 0, 0, 0.1);
-                        padding: .5rem;
-
+                        background-color: rgb(34, 35, 43);
+                        box-shadow: -.5rem 1rem 20px rgba(0, 0, 0, 0.1);
 
                         li {
                             width: 100%;
@@ -815,14 +822,9 @@
 
                             span {
                                 font-size: 1.8rem;
-                                color: black;
+                                color: rgb(255, 255, 255);
                             }
 
-                            img {
-                                width: 3rem;
-                                height: auto;
-                                margin-right: 1rem;
-                            }
 
                         }
                     }
@@ -850,9 +852,8 @@
                     top: 110%;
                     right: 0;
                     width: 15rem;
-                    background-color: #fff;
+                    background-color: rgb(34, 35, 43);
                     box-shadow: -.5rem 1rem 20px rgba(0, 0, 0, 0.1);
-                    padding: 1rem;
                     display: none;
 
                     ul {
@@ -860,12 +861,19 @@
 
                         li {
                             margin-bottom: 0.5rem;
+                            background: none;
+                            width: 100%;
+                            padding: 1rem;
 
                             a {
                                 font-size: 1.8rem;
                                 text-decoration: none;
-                                color: #000000;
+                                color: #ffffff;
                                 padding: 1rem 0;
+                            }
+
+                            &:hover {
+                                background: linear-gradient(90.93deg, rgba(250, 107, 29, 0.21) 4.2%, rgba(250, 92, 28, 0.04) 97.89%);
                             }
                         }
                     }
@@ -1069,9 +1077,9 @@
 
     #mobileTopBar.dark {
 
-        background-color: rgba(18, 28, 53, 1);
+        background-color: rgba(28, 29, 35, 1);
 
-        h2{
+        h2 {
             color: #fff;
 
         }
@@ -1151,7 +1159,7 @@
         }
 
 
-        
+
 
 
     }
@@ -1201,7 +1209,7 @@
 
     }
 
-    
+
     ul {
         width: 100%;
 
@@ -1327,32 +1335,32 @@
     }
 
 
-    .bottom{
+    .bottom {
         padding-left: 2rem;
 
-        .withLogo{
+        .withLogo {
             display: flex;
             align-items: center;
             margin-top: 3rem;
             margin-bottom: 2rem;
 
-            img{
+            img {
                 width: 3.5rem;
                 margin-right: 1.5rem;
             }
 
-            p{
+            p {
                 font-size: 2rem;
                 margin-right: 1.5rem;
             }
         }
 
-        .social{
+        .social {
             margin-right: -.5rem;
             display: flex;
             align-items: center;
-            img
-            {
+
+            img {
                 margin-right: .9rem;
             }
 
@@ -1465,7 +1473,7 @@
         }
     }
 
-    
+
     .themeSelector.dark {
         background-color: rgba(18, 28, 53, 1);
 
@@ -1500,7 +1508,7 @@
     top: 0;
     right: -100%;
     bottom: 0;
-    background-color: rgba(20, 25, 38, 1);
+    background-color: rgba(28, 29, 35, 1);
     box-shadow: -5rem 0 70px rgba(0, 0, 0, 0.3);
     z-index: 99999999999;
     transition: .2s;
@@ -1535,7 +1543,7 @@
 
     }
 
-    
+
     ul {
         width: 100%;
 
@@ -1660,21 +1668,21 @@
         }
     }
 
-    .bottom{
+    .bottom {
         padding-left: 2rem;
 
-        .withLogo{
+        .withLogo {
             display: flex;
             align-items: center;
             margin-top: 3rem;
             margin-bottom: 2rem;
 
-            img{
+            img {
                 width: 3.5rem;
                 margin-right: 1.5rem;
             }
 
-            p{
+            p {
                 font-size: 2rem;
                 margin-right: 1.5rem;
                 color: #fff;
@@ -1682,7 +1690,7 @@
             }
         }
 
-        .social{
+        .social {
             margin-right: -.5rem;
 
         }
@@ -1794,7 +1802,7 @@
         }
     }
 
-    
+
     .themeSelector.dark {
         background-color: rgba(18, 28, 53, 1);
 

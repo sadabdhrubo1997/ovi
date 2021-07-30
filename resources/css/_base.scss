@@ -25,8 +25,83 @@ body {
     -o-transition: .2s;
 }
 
+
+
+
+
+
+
+footer {
+    margin-top: 5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    font-weight: 700;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+
+    p {
+          font-size: 1.6rem;
+          font-weight: 400;
+        a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5);
+            transition: .2s;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            -o-transition: .2s;
+              font-size: 1.6rem;
+              font-weight: 400;
+
+            &:hover {
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
 body.dark {
-    background-color: rgba(14, 22, 46, 1);
+    background-color: rgba(24, 26, 30, 1);
+
+    footer {
+        margin-top: 5rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1.8rem;
+        font-weight: 700;
+        flex-direction: row;
+
+
+        p {
+            a {
+                text-decoration: none;
+                color: rgba(255, 255, 255, 0.5);
+                transition: .2s;
+                -webkit-transition: .2s;
+                -moz-transition: .2s;
+                -ms-transition: .2s;
+                -o-transition: .2s;
+
+                &:hover {
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+    }
 }
 
 
@@ -54,6 +129,15 @@ body.dark {
 @media only screen and (max-width: 577px) {
     #mainbody {
         padding: 7.5rem 1.5rem;
-        
+
+    }
+
+    footer {
+        justify-content: center  !important;
+
+        p {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
     }
 }

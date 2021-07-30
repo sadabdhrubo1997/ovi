@@ -20,8 +20,81 @@ body {
   -o-transition: .2s;
 }
 
+footer {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  font-weight: 700;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+footer p a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+footer p a:hover {
+  color: black;
+}
+
 body.dark {
-  background-color: #0e162e;
+  background-color: #181a1e;
+}
+
+body.dark footer {
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.8rem;
+  font-weight: 700;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body.dark footer p a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+body.dark footer p a:hover {
+  color: white;
 }
 
 #mainbody {
@@ -40,6 +113,15 @@ body.dark {
 @media only screen and (max-width: 577px) {
   #mainbody {
     padding: 7.5rem 1.5rem;
+  }
+  footer {
+    -webkit-box-pack: center  !important;
+        -ms-flex-pack: center  !important;
+            justify-content: center  !important;
+  }
+  footer p {
+    text-align: center;
+    margin-bottom: 0.5rem;
   }
 }
 
@@ -430,7 +512,7 @@ body.dark {
 }
 
 #topbar .right .Right .languageDropdown {
-  width: 10rem;
+  width: 13rem;
   height: 3rem;
   margin-right: 2rem;
   position: relative;
@@ -488,7 +570,7 @@ body.dark {
 
 #topbar .right .Right .languageDropdown .dropdownMenu {
   position: absolute;
-  top: 105%;
+  top: 110%;
   left: 0;
   right: 0;
 }
@@ -499,7 +581,6 @@ body.dark {
   background-color: white;
   -webkit-box-shadow: 0 1rem 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 1rem 20px rgba(0, 0, 0, 0.1);
-  padding: .5rem;
 }
 
 #topbar .right .Right .languageDropdown .dropdownMenu ul li {
@@ -514,16 +595,23 @@ body.dark {
   margin-bottom: 0.5rem;
   color: #000000;
   cursor: pointer;
+  background: linear-gradient(90.93deg, rgba(250, 106, 29, 0) 4.2%, rgba(250, 91, 28, 0) 97.89%);
+  padding: 2rem 1rem;
 }
 
 #topbar .right .Right .languageDropdown .dropdownMenu ul li span {
   font-size: 1.8rem;
+  padding: 1rem;
 }
 
 #topbar .right .Right .languageDropdown .dropdownMenu ul li img {
-  width: 3rem;
+  width: 2rem;
   height: auto;
-  margin-right: 1rem;
+  margin-right: .5rem;
+}
+
+#topbar .right .Right .languageDropdown .dropdownMenu ul li:hover {
+  background: linear-gradient(90.93deg, rgba(250, 107, 29, 0.21) 4.2%, rgba(250, 92, 28, 0.04) 97.89%);
 }
 
 #topbar .right .Right .UserName {
@@ -549,7 +637,6 @@ body.dark {
   background-color: #fff;
   -webkit-box-shadow: -0.5rem 1rem 20px rgba(0, 0, 0, 0.1);
           box-shadow: -0.5rem 1rem 20px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
   display: none;
 }
 
@@ -558,10 +645,15 @@ body.dark {
 }
 
 #topbar .right .Right .hambargerRight .dotMenu ul li {
-  margin-bottom: 0.5rem;
   padding: .6rem 0;
   text-align: left;
   padding-left: .5rem;
+  background: none;
+  padding: 1rem;
+}
+
+#topbar .right .Right .hambargerRight .dotMenu ul li:hover {
+  background: linear-gradient(90.93deg, rgba(250, 107, 29, 0.21) 4.2%, rgba(250, 92, 28, 0.04) 97.89%);
 }
 
 #topbar .right .Right .hambargerRight .dotMenu ul li a {
@@ -580,7 +672,7 @@ body.dark {
 }
 
 #topbar.dark {
-  background-color: #121c35;
+  background-color: #1c1d23;
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.08);
 }
 
@@ -590,7 +682,7 @@ body.dark {
 }
 
 #topbar.dark .left .logo::after {
-  background-color: #121c35;
+  background-color: #1c1d23;
 }
 
 #topbar.dark .left .logo a {
@@ -610,8 +702,7 @@ body.dark {
 #topbar.dark .left .sidebarTogglesButton {
   height: 3.6rem;
   width: 3.6rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#F82B19), to(#FED80C));
-  background: linear-gradient(180deg, #F82B19 0%, #FED80C 100%);
+  background: rgba(248, 248, 248, 0.05);
 }
 
 #topbar.dark .left .sidebarTogglesButton .inner .line {
@@ -780,7 +871,7 @@ body.dark {
 }
 
 #topbar.dark .right .Right .themeSelector.dark {
-  background-color: #0f141f;
+  background-color: #181a1e;
 }
 
 #topbar.dark .right .Right .themeSelector.dark .lightLabel {
@@ -796,12 +887,12 @@ body.dark {
 }
 
 #topbar.dark .right .Right .themeSelector.dark .switch {
-  background-color: #080e1d;
+  background-color: #181a1e;
   left: 18%;
 }
 
 #topbar.dark .right .Right .languageDropdown {
-  width: 10rem;
+  width: 13rem;
   height: 3rem;
   margin-right: 2rem;
   position: relative;
@@ -857,20 +948,10 @@ body.dark {
   cursor: pointer;
 }
 
-#topbar.dark .right .Right .languageDropdown .dropdownMenu {
-  position: absolute;
-  top: 105%;
-  left: 0;
-  right: 0;
-}
-
 #topbar.dark .right .Right .languageDropdown .dropdownMenu ul {
-  list-style: none;
-  width: 100%;
-  background-color: white;
-  -webkit-box-shadow: 0 1rem 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1rem 20px rgba(0, 0, 0, 0.1);
-  padding: .5rem;
+  background-color: #22232b;
+  -webkit-box-shadow: -0.5rem 1rem 20px rgba(0, 0, 0, 0.1);
+          box-shadow: -0.5rem 1rem 20px rgba(0, 0, 0, 0.1);
 }
 
 #topbar.dark .right .Right .languageDropdown .dropdownMenu ul li {
@@ -889,13 +970,7 @@ body.dark {
 
 #topbar.dark .right .Right .languageDropdown .dropdownMenu ul li span {
   font-size: 1.8rem;
-  color: black;
-}
-
-#topbar.dark .right .Right .languageDropdown .dropdownMenu ul li img {
-  width: 3rem;
-  height: auto;
-  margin-right: 1rem;
+  color: white;
 }
 
 #topbar.dark .right .Right .UserName {
@@ -918,10 +993,9 @@ body.dark {
   top: 110%;
   right: 0;
   width: 15rem;
-  background-color: #fff;
+  background-color: #22232b;
   -webkit-box-shadow: -0.5rem 1rem 20px rgba(0, 0, 0, 0.1);
           box-shadow: -0.5rem 1rem 20px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
   display: none;
 }
 
@@ -931,13 +1005,20 @@ body.dark {
 
 #topbar.dark .right .Right .hambargerRight .dotMenu ul li {
   margin-bottom: 0.5rem;
+  background: none;
+  width: 100%;
+  padding: 1rem;
 }
 
 #topbar.dark .right .Right .hambargerRight .dotMenu ul li a {
   font-size: 1.8rem;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   padding: 1rem 0;
+}
+
+#topbar.dark .right .Right .hambargerRight .dotMenu ul li:hover {
+  background: linear-gradient(90.93deg, rgba(250, 107, 29, 0.21) 4.2%, rgba(250, 92, 28, 0.04) 97.89%);
 }
 
 #topbar.dark .right .Right .hambargerRight .dotMenu.show {
@@ -1125,7 +1206,7 @@ body.dark {
     fill: #000000;
   }
   #mobileTopBar.dark {
-    background-color: #121c35;
+    background-color: #1c1d23;
   }
   #mobileTopBar.dark h2 {
     color: #fff;
@@ -1551,7 +1632,7 @@ body.dark {
   top: 0;
   right: -100%;
   bottom: 0;
-  background-color: #141926;
+  background-color: #1c1d23;
   -webkit-box-shadow: -5rem 0 70px rgba(0, 0, 0, 0.3);
           box-shadow: -5rem 0 70px rgba(0, 0, 0, 0.3);
   z-index: 99999999999;
@@ -2223,7 +2304,7 @@ body.dark {
 }
 
 #sidebar.dark {
-  background-color: #121c35;
+  background-color: #1c1d23;
 }
 
 #sidebar.dark ul li a {
@@ -2259,7 +2340,7 @@ body.dark {
 }
 
 #sidebar.dark .bottom .socialMedia a::after {
-  background: #0e162e;
+  background: #2b2c35;
   opacity: 1;
 }
 
@@ -2315,10 +2396,16 @@ body.dark {
   margin-right: 1.4rem;
 }
 
-#ChartWrapper .TopArea .left h2 {
+#ChartWrapper .TopArea .left .heading h2 {
   font-weight: 700;
   font-size: 2.4rem;
   color: #000;
+}
+
+#ChartWrapper .TopArea .left .heading p {
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 400;
 }
 
 #ChartWrapper .TopArea .right .filterArea {
@@ -2372,15 +2459,19 @@ body.dark {
 }
 
 #ChartWrapper.dark {
-  background-color: #121c35;
+  background-color: #1c1d23;
 }
 
-#ChartWrapper.dark .TopArea .left h2 {
+#ChartWrapper.dark .TopArea .left .heading h2 {
   color: white;
 }
 
+#ChartWrapper.dark .TopArea .left .heading p {
+  color: #fff;
+}
+
 #ChartWrapper.dark .TopArea .right .filterArea {
-  background-color: #0e162e;
+  background-color: #181a1e;
 }
 
 #ChartWrapper.dark .TopArea .right .filterArea a {
@@ -2389,12 +2480,12 @@ body.dark {
 }
 
 #ChartWrapper.dark .TopArea .right .filterArea a:hover {
-  background-color: #121c35;
+  background-color: #1c1d23;
   color: #f06111;
 }
 
 #ChartWrapper.dark .TopArea .right .filterArea a.active {
-  background-color: #121c35;
+  background-color: #1c1d23;
   color: #f06111;
 }
 
@@ -2493,6 +2584,7 @@ body.dark {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 0.5rem;
 }
 
 .indexChartBottomArea .left .filterArea button span {
@@ -2533,6 +2625,14 @@ body.dark {
   color: #fff;
 }
 
+.indexChartBottomArea .left .filterArea button:hover::after {
+  opacity: 1;
+}
+
+.indexChartBottomArea .left .filterArea button:hover span {
+  color: #fff;
+}
+
 .indexChartBottomArea .left .bottomArea .inner #indexMostProftableTrades {
   width: 100%;
   background: white;
@@ -2558,7 +2658,7 @@ body.dark {
 
 .indexChartBottomArea .left .bottomArea .inner #indexMostProftableTrades table tr td {
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
 }
 
 .indexChartBottomArea .left .bottomArea .inner #indexMostProftableTrades table tr td div {
@@ -2851,6 +2951,7 @@ body.dark {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-right: 0.5rem;
 }
 
 .indexChartBottomArea .right .filterArea button span {
@@ -2888,6 +2989,14 @@ body.dark {
 }
 
 .indexChartBottomArea .right .filterArea button.active span {
+  color: #fff;
+}
+
+.indexChartBottomArea .right .filterArea button:hover::after {
+  opacity: 1;
+}
+
+.indexChartBottomArea .right .filterArea button:hover span {
   color: #fff;
 }
 
@@ -2946,6 +3055,8 @@ body.dark {
   -moz-border-radius: .6rem;
   -ms-border-radius: .6rem;
   -o-border-radius: .6rem;
+  -ms-grid-column-align: right;
+      justify-self: right;
 }
 
 .indexChartBottomArea .right .inner #indexOngoinCompetition .table .tr .viewBtn {
@@ -2976,10 +3087,33 @@ body.dark {
           align-items: center;
   text-decoration: none;
   color: #f06111;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  background-color: rgba(240, 99, 17, 0);
 }
 
 .indexChartBottomArea .right .inner #indexOngoinCompetition .table .tr .viewBtn a img {
   width: 1.9rem;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  filter: brightness(100%) invert(0);
+  -webkit-filter: brightness(100%) invert(0);
+}
+
+.indexChartBottomArea .right .inner #indexOngoinCompetition .table .tr .viewBtn a:hover {
+  background-color: #f06111;
+  color: white;
+}
+
+.indexChartBottomArea .right .inner #indexOngoinCompetition .table .tr .viewBtn a:hover img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
 }
 
 .indexChartBottomArea .right .inner #indexOngoinCompetition .table .tr:last-child {
@@ -3071,10 +3205,33 @@ body.dark {
           align-items: center;
   text-decoration: none;
   color: #f06111;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  background-color: rgba(240, 99, 17, 0);
 }
 
 .indexChartBottomArea .right .inner #indexCompletedCompetition .table .tr .viewBtn a img {
   width: 1.9rem;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  filter: brightness(100%) invert(0);
+  -webkit-filter: brightness(100%) invert(0);
+}
+
+.indexChartBottomArea .right .inner #indexCompletedCompetition .table .tr .viewBtn a:hover {
+  background-color: #f06111;
+  color: white;
+}
+
+.indexChartBottomArea .right .inner #indexCompletedCompetition .table .tr .viewBtn a:hover img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
 }
 
 .indexChartBottomArea .right .inner #indexCompletedCompetition .table .tr:last-child {
@@ -3166,10 +3323,33 @@ body.dark {
           align-items: center;
   text-decoration: none;
   color: #f06111;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  background-color: rgba(240, 99, 17, 0);
 }
 
 .indexChartBottomArea .right .inner #indexMyCompetition .table .tr .viewBtn a img {
   width: 1.9rem;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  filter: brightness(100%) invert(0);
+  -webkit-filter: brightness(100%) invert(0);
+}
+
+.indexChartBottomArea .right .inner #indexMyCompetition .table .tr .viewBtn a:hover {
+  background-color: #f06111;
+  color: white;
+}
+
+.indexChartBottomArea .right .inner #indexMyCompetition .table .tr .viewBtn a:hover img {
+  filter: brightness(0) invert(1);
+  -webkit-filter: brightness(0) invert(1);
 }
 
 .indexChartBottomArea .right .inner #indexMyCompetition .table .tr:last-child {
@@ -3182,7 +3362,7 @@ body.dark {
 }
 
 .indexChartBottomArea.dark .left .filterArea {
-  background-color: #121C35;
+  background-color: #1c1d23;
 }
 
 .indexChartBottomArea.dark .left .filterArea button span {
@@ -3216,8 +3396,16 @@ body.dark {
   color: #fff;
 }
 
+.indexChartBottomArea.dark .left .filterArea button:hover::after {
+  opacity: 1;
+}
+
+.indexChartBottomArea.dark .left .filterArea button:hover span {
+  color: #fff;
+}
+
 .indexChartBottomArea.dark .left .bottomArea .inner #indexMostProftableTrades {
-  background: #121c35;
+  background: #1c1d23;
 }
 
 .indexChartBottomArea.dark .left .bottomArea .inner #indexMostProftableTrades table {
@@ -3278,7 +3466,7 @@ body.dark {
 .indexChartBottomArea.dark .left .bottomArea .inner #indexTopTraders .singleItem {
   width: 31%;
   margin-bottom: 2.7rem;
-  background-color: #121c35;
+  background-color: #1c1d23;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem;
@@ -3381,7 +3569,7 @@ body.dark {
 }
 
 .indexChartBottomArea.dark .left .bottomArea .inner #indexTopTraded .singleItem {
-  background-color: #121c35;
+  background-color: #1c1d23;
 }
 
 .indexChartBottomArea.dark .left .bottomArea .inner #indexTopTraded .singleItem img {
@@ -3431,7 +3619,7 @@ body.dark {
 }
 
 .indexChartBottomArea.dark .right .filterArea {
-  background-color: #121c35;
+  background-color: #1c1d23;
 }
 
 .indexChartBottomArea.dark .right .filterArea button span {
@@ -3472,8 +3660,16 @@ body.dark {
   color: white;
 }
 
+.indexChartBottomArea.dark .right .filterArea button:hover::after {
+  opacity: 1;
+}
+
+.indexChartBottomArea.dark .right .filterArea button:hover span {
+  color: white;
+}
+
 .indexChartBottomArea.dark .right .inner #indexOngoinCompetition {
-  background-color: #121c35;
+  background-color: #1c1d23;
   padding: 1rem;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -3546,12 +3742,16 @@ body.dark {
   color: #f06111;
 }
 
+.indexChartBottomArea.dark .right .inner #indexOngoinCompetition .table .tr .viewBtn a:hover {
+  color: #ffffff;
+}
+
 .indexChartBottomArea.dark .right .inner #indexOngoinCompetition .table .tr:last-child {
   border: none;
 }
 
 .indexChartBottomArea.dark .right .inner #indexCompletedCompetition {
-  background-color: #121c35;
+  background-color: #1c1d23;
 }
 
 .indexChartBottomArea.dark .right .inner #indexCompletedCompetition .table {
@@ -3630,12 +3830,16 @@ body.dark {
   width: 1.9rem;
 }
 
+.indexChartBottomArea.dark .right .inner #indexCompletedCompetition .table .tr .viewBtn a:hover {
+  color: #ffffff;
+}
+
 .indexChartBottomArea.dark .right .inner #indexCompletedCompetition .table .tr:last-child {
   border: none;
 }
 
 .indexChartBottomArea.dark .right .inner #indexMyCompetition {
-  background-color: #121c35;
+  background-color: #1c1d23;
   padding: 1rem;
   border-radius: 1rem;
   -webkit-border-radius: 1rem;
@@ -3723,6 +3927,10 @@ body.dark {
 
 .indexChartBottomArea.dark .right .inner #indexMyCompetition .table .tr .viewBtn a img {
   width: 1.9rem;
+}
+
+.indexChartBottomArea.dark .right .inner #indexMyCompetition .table .tr .viewBtn a:hover {
+  color: #ffffff;
 }
 
 .indexChartBottomArea.dark .right .inner #indexMyCompetition .table .tr:last-child {
