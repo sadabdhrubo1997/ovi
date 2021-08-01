@@ -1,9 +1,10 @@
- if (!localStorage.getItem("theme")) {
-     localStorage.setItem("theme", "light")
- }
- if (!localStorage.getItem("sidebarCollupsed")) {
-     localStorage.setItem("sidebarCollupsed", "true")
- }
+if (!localStorage.getItem("theme")) {
+    localStorage.setItem("theme", "light")
+
+}
+if (!localStorage.getItem("sidebarCollupsed")) {
+    localStorage.setItem("sidebarCollupsed", "true")
+}
 
 // Responsive html font size
 let iw = window.innerWidth;
@@ -75,6 +76,7 @@ const mobileSideMenu = document.querySelector("#mobileSideMenu")
 
 
 
+
 // element selection for apply theme change
 
 let topbar = document.querySelector("#topbar")
@@ -82,11 +84,9 @@ let body = document.querySelector("body")
 let indexChartWrapper = document.querySelector(".indexChartWrapper")
 let indexChartBottomArea = document.querySelector(".indexChartBottomArea")
 let mobileTopBar = document.querySelector("#mobileTopBar")
-
-
-
-
-
+let compititionsPageWrapper = document.querySelector("#compititionsPageWrapper")
+let compititionsPagination = document.querySelector("#compititionsPagination")
+let mobileTable = document.querySelector(".mobileTable")
 
 
 let mainLogo = document.querySelector("#mainLogo")
@@ -102,46 +102,46 @@ if (currentTheme === "dark") {
     sidebar.classList.add("dark")
     body.classList.add("dark")
     mobileTopBar.classList.add("dark")
-    indexChartBottomArea.classList.add("dark")
-    indexChartWrapper.classList.add("dark")
-    mobileSideMenu.classList.add("dark")
+    mobileSideMenu.classList.add("dark");
+    compititionsPageWrapper.classList.add("dark")
+    compititionsPagination.classList.add("dark")
+    mobileTable.classList.add("dark")
     mainLogo.src = './resources/icons/sidebar_icons/darkModeLogo.png'
 }
 
 
 themeSelector.addEventListener("click", function () {
-    themeSelectorSmall.classList.toggle("dark")
     themeSelector.classList.toggle("dark")
+    themeSelectorSmall.classList.toggle("dark")
+
+    // document.querySelector("#sidebar").classList.toggle("dark")
+    // document.querySelector("#topbar").classList.toggle("dark")
     topbar.classList.toggle("dark")
     sidebar.classList.toggle("dark")
     body.classList.toggle("dark")
     mobileTopBar.classList.toggle("dark")
     mobileSideMenu.classList.toggle("dark");
-    indexChartWrapper.classList.toggle("dark")
-    indexChartBottomArea.classList.toggle("dark")
+    compititionsPagination.classList.toggle("dark")
+    compititionsPageWrapper.classList.toggle("dark")
+
+    mobileTable.classList.toggle("dark")
+
+
+
 
     if (localStorage.getItem("theme") === "dark") {
-        mainLogo.src = './resources/icons/sidebar_icons/sidebarlogo2.png'
         localStorage.setItem("theme", "light")
-        
+        mainLogo.src = './resources/icons/sidebar_icons/sidebarlogo2.png'
 
-    } else if (localStorage.getItem("theme") === "light") {        
-        mainLogo.src = './resources/icons/sidebar_icons/darkModeLogo.png'
+
+    } else if (localStorage.getItem("theme") === "light") {
         localStorage.setItem("theme", "dark")
+        mainLogo.src = './resources/icons/sidebar_icons/darkModeLogo.png'
     }
 })
 
 
 themeSelectorSmall.addEventListener("click", function () {
-    themeSelectorSmall.classList.toggle("dark")
-    themeSelector.classList.toggle("dark")
-    body.classList.toggle("dark")
-    mobileTopBar.classList.toggle("dark")
-    mobileSideMenu.classList.toggle("dark");
-    indexChartWrapper.classList.toggle("dark")
-    indexChartBottomArea.classList.toggle("dark")
-    topbar.classList.toggle("dark")
-    sidebar.classList.toggle("dark")
 
     if (localStorage.getItem("theme") === "dark") {
         localStorage.setItem("theme", "light")
@@ -151,6 +151,21 @@ themeSelectorSmall.addEventListener("click", function () {
         localStorage.setItem("theme", "dark")
         mainLogo.src = './resources/icons/sidebar_icons/darkModeLogo.png'
     }
+
+
+    themeSelector.classList.toggle("dark")
+    themeSelectorSmall.classList.toggle("dark")
+    topbar.classList.toggle("dark")
+    sidebar.classList.toggle("dark")
+    body.classList.toggle("dark")
+    mobileTopBar.classList.toggle("dark")
+    mobileSideMenu.classList.toggle("dark");
+    compititionsPageWrapper.classList.toggle("dark")
+    compititionsPagination.classList.toggle("dark")
+    mobileTable.classList.toggle("dark")
+
+
+   
 })
 
 
@@ -177,48 +192,9 @@ function indexChartBottomAreaInnerFadeAnimation() {
     }, 300);
 }
 
-indexMostProftableTradesBtn.addEventListener("click", function () {
-    indexChartBottomAreaInnerFadeAnimation()
-    indexMostProftableTradesBtn.classList.add("active")
-    indexTopTradersBtn.classList.remove("active")
-    indexTopTradedBtn.classList.remove("active")
-
-    setTimeout(() => {
-        indexMostProftableTrades.style.display = "flex"
-        indexTopTraders.style.display = "none"
-        indexTopTraded.style.display = "none"
-    }, 150);
-
-})
 
 
-indexTopTradersBtn.addEventListener("click", function () {
-    indexChartBottomAreaInnerFadeAnimation()
-    indexTopTradersBtn.classList.add("active")
-    indexTopTradedBtn.classList.remove("active")
-    indexMostProftableTradesBtn.classList.remove("active")
 
-    setTimeout(() => {
-        indexTopTraders.style.display = "flex"
-        indexMostProftableTrades.style.display = "none"
-        indexTopTraded.style.display = "none"
-    }, 150);
-
-})
-
-
-indexTopTradedBtn.addEventListener("click", function () {
-    indexChartBottomAreaInnerFadeAnimation()
-    indexTopTradedBtn.classList.add("active")
-    indexTopTradersBtn.classList.remove("active")
-    indexMostProftableTradesBtn.classList.remove("active")
-
-    setTimeout(() => {
-        indexTopTraded.style.display = "flex"
-        indexMostProftableTrades.style.display = "none"
-        indexTopTraders.style.display = "none"
-    }, 150);
-})
 
 
 // right side code
@@ -234,59 +210,6 @@ function indexChartBottomAreaInnerRightFadeAnimation() {
 }
 
 
-let indexOngoinCompetitionBtn = document.querySelector("#indexOngoinCompetitionBtn")
-let indexOngoinCompetition = document.querySelector("#indexOngoinCompetition")
-
-let indexCompletedCompetitionBtn = document.querySelector("#indexCompletedCompetitionBtn")
-let indexCompletedCompetition = document.querySelector("#indexCompletedCompetition")
-
-let indexMyCompetitionBtn = document.querySelector("#indexMyCompetitionBtn")
-let indexMyCompetition = document.querySelector("#indexMyCompetition")
-
-
-indexOngoinCompetitionBtn.addEventListener("click", function () {
-    indexChartBottomAreaInnerRightFadeAnimation()
-    indexOngoinCompetitionBtn.classList.add("active")
-    indexCompletedCompetitionBtn.classList.remove("active")
-    indexMyCompetitionBtn.classList.remove("active")
-
-    setTimeout(() => {
-        indexOngoinCompetition.style.display = "block";
-        indexCompletedCompetition.style.display = "none"
-        indexMyCompetition.style.display = "none"
-    }, 150);
-
-})
-
-indexCompletedCompetitionBtn.addEventListener("click", function () {
-    indexChartBottomAreaInnerRightFadeAnimation()
-    indexCompletedCompetitionBtn.classList.add("active")
-    indexMyCompetitionBtn.classList.remove("active")
-    indexOngoinCompetitionBtn.classList.remove("active")
-
-    setTimeout(() => {
-        indexCompletedCompetition.style.display = "block"
-        indexOngoinCompetition.style.display = "none";
-        indexMyCompetition.style.display = "none"
-    }, 150);
-
-})
-
-indexMyCompetitionBtn.addEventListener("click", function () {
-    indexChartBottomAreaInnerRightFadeAnimation()
-    indexMyCompetitionBtn.classList.add("active")
-    indexOngoinCompetitionBtn.classList.remove("active")
-    indexCompletedCompetitionBtn.classList.remove("active")
-
-    setTimeout(() => {
-        indexMyCompetition.style.display = "block"
-        indexOngoinCompetition.style.display = "none";
-        indexCompletedCompetition.style.display = "none"
-    }, 150);
-
-})
-
-//index page bottom tabs code end here//
 
 
 //language dropdown //
@@ -326,9 +249,9 @@ dotMenuIcon.addEventListener("click", function () {
 
 /*
 dotMenuIcon.addEventListener("blur", function (e) {
-    setTimeout(() => {
-        dotMenuDropDown.classList.remove("show")
-    }, 100);
+   setTimeout(() => {
+       dotMenuDropDown.classList.remove("show")
+   }, 100);
 })
 */
 

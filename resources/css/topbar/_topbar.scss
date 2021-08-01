@@ -421,7 +421,7 @@
                         width: 100%;
                         background-color: rgb(255, 255, 255);
                         box-shadow: 0 1rem 20px rgba(0, 0, 0, 0.1);
-                     
+
 
 
                         li {
@@ -1085,7 +1085,7 @@
         }
 
         .hambarger {
-            background: linear-gradient(180deg, #F82B19 0%, #FED80C 100%);
+            background: rgba(39, 40, 45, 1);
 
             .inner {
 
@@ -1150,12 +1150,28 @@
                 align-items: center;
 
                 svg {
-                    fill: rgba(0, 0, 0, 0.3);
+                    fill: rgba(255, 255, 255, 0.4);
                     height: 1.4rem;
                     width: 1.4rem;
                 }
             }
 
+        }
+
+        .search {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-right: 1.5rem;
+
+            svg {
+                width: 3rem;
+                height: 3rem;
+
+                path {
+                    fill: #ffffff;
+                }
+            }
         }
 
 
@@ -1186,7 +1202,7 @@
     #mobileSideMenuCross {
         width: 6rem;
         height: 6rem;
-        background-color: rgba(196, 196, 196, 0.2);
+        background-color: rgba(196, 196, 196, 0.4);
         border-radius: 100%;
         -webkit-border-radius: 100%;
         -moz-border-radius: 100%;
@@ -1353,9 +1369,14 @@
                 font-size: 2rem;
                 margin-right: 1.5rem;
             }
+
+            h3{
+                color: #000000;
+
+            }
         }
 
-        .social {
+        .socialMedia {
             margin-right: -.5rem;
             display: flex;
             align-items: center;
@@ -1364,13 +1385,41 @@
                 margin-right: .9rem;
             }
 
+            a {
+                width: 3.5rem;
+                height: 3.5em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                -ms-border-radius: 100%;
+                -o-border-radius: 100%;
+                background: rgba(220, 219, 219, 0.62);
+                margin-right: 1.5rem;
+
+                svg {
+                    fill: rgba(176, 174, 174, 1);
+                    width: 1.5rem;
+
+                }
+
+                &:focus{
+                    background: linear-gradient(180deg, #F82B19 0%, #FED80C 100%);
+                    svg{
+                        fill: rgb(255, 255, 255);
+                    }
+                }
+            }
+
         }
 
     }
 
 
 
-    .themeSelector {
+    #themeSelectorSmall {
         width: 10rem;
         height: 3.7rem;
         border-radius: 1.8rem;
@@ -1474,7 +1523,7 @@
     }
 
 
-    .themeSelector.dark {
+    #themeSelectorSmall.dark {
         background-color: rgba(18, 28, 53, 1);
 
         .lightLabel {
@@ -1492,6 +1541,16 @@
         .switch {
             background-color: rgb(8, 14, 29);
             left: 18%;
+
+            .wrapper {
+                .darkIcon {
+                    opacity: 1;
+                }
+
+                .lightIcon {
+                    opacity: 0;
+                }
+            }
         }
     }
 
@@ -1539,8 +1598,6 @@
                 fill: rgba(164, 164, 164, 1);
             }
         }
-
-
     }
 
 
@@ -1686,20 +1743,57 @@
                 font-size: 2rem;
                 margin-right: 1.5rem;
                 color: #fff;
+            }
+            h3{
+                color: #ffffff;
 
             }
         }
 
-        .social {
+        
+        .socialMedia {
             margin-right: -.5rem;
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: .9rem;
+            }
+
+            a {
+                width: 3.5rem;
+                height: 3.5em;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100%;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                -ms-border-radius: 100%;
+                -o-border-radius: 100%;
+                background: rgba(255, 255, 255, 0.2);
+                margin-right: 1.5rem;
+
+                svg {
+                    fill: rgba(176, 174, 174, 1);
+                    width: 1.5rem;
+
+                }
+
+                &:focus{
+                    background: linear-gradient(180deg, #F82B19 0%, #FED80C 100%);
+                    svg{
+                        fill: rgb(255, 255, 255);
+                    }
+                }
+            }
 
         }
-
     }
 
 
 
-    .themeSelector {
+    #themeSelectorSmall {
         width: 10rem;
         height: 3.7rem;
         border-radius: 1.8rem;
@@ -1753,7 +1847,7 @@
             -moz-border-radius: 100%;
             -ms-border-radius: 100%;
             -o-border-radius: 100%;
-            background-color: #fff;
+            background-color: rgba(40, 41, 49, 1);
             position: absolute;
             left: 81%;
             top: 50%;
@@ -1776,7 +1870,7 @@
                 -moz-border-radius: 100%;
                 -ms-border-radius: 100%;
                 -o-border-radius: 100%;
-                background-color: #fff;
+                background-color: rgba(40, 41, 49, 1);
                 position: relative;
 
                 img {
@@ -1803,8 +1897,10 @@
     }
 
 
-    .themeSelector.dark {
-        background-color: rgba(18, 28, 53, 1);
+    // .themeSelector{
+    #themeSelectorSmall.dark {
+        background-color: rgba(24, 26, 30, 1);
+        // background-color: rgb(163, 8, 8);
 
         .lightLabel {
             color: rgba(101, 101, 101, 1);
@@ -1819,8 +1915,19 @@
         }
 
         .switch {
-            background-color: rgb(8, 14, 29);
+            background-color: rgb(8, 14, 29) !important;
             left: 18%;
+
+
+            .wrapper {
+                .darkIcon {
+                    opacity: 1;
+                }
+
+                .lightIcon {
+                    opacity: 0;
+                }
+            }
         }
     }
 
