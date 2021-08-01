@@ -118,6 +118,7 @@ body.dark footer p a:hover {
     -webkit-box-pack: center  !important;
         -ms-flex-pack: center  !important;
             justify-content: center  !important;
+    margin-top: 2rem !important;
   }
   footer p {
     text-align: center;
@@ -2767,7 +2768,7 @@ body.dark footer p a:hover {
 .indexChartBottomArea .left .bottomArea .inner #indexMostProftableTrades table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   color: #000000;
 }
@@ -2944,7 +2945,7 @@ body.dark footer p a:hover {
 }
 
 .indexChartBottomArea .left .bottomArea .inner #indexTopTraded .singleItem {
-  width: 31%;
+  width: 32.5%;
   padding: 1rem;
   background-color: #fff;
   display: -webkit-box;
@@ -2980,8 +2981,8 @@ body.dark footer p a:hover {
 }
 
 .indexChartBottomArea .left .bottomArea .inner #indexTopTraded .singleItem .right h3 {
-  font-weight: 700;
-  font-size: 2.4rem;
+  font-weight: 400;
+  font-size: 1.8rem;
   color: black;
 }
 
@@ -3538,17 +3539,17 @@ body.dark footer p a:hover {
 
 .indexChartBottomArea.dark .left .bottomArea .inner #indexMostProftableTrades table tr td div img {
   width: 5rem;
-  margin-right: .9rem;
+  margin-right: .2rem;
 }
 
 .indexChartBottomArea.dark .left .bottomArea .inner #indexMostProftableTrades table tr td div img.small {
-  width: 2.8rem;
-  margin-right: 0.7rem;
+  width: 2.2rem;
+  margin-right: 0.5rem;
 }
 
 .indexChartBottomArea.dark .left .bottomArea .inner #indexMostProftableTrades table tr td div .arrow {
-  width: 2.8rem;
-  margin-right: 0.6rem;
+  width: 2rem;
+  margin-right: 0.4rem;
 }
 
 .indexChartBottomArea.dark .left .bottomArea .inner #indexMostProftableTrades table tr td div span {
@@ -3693,7 +3694,7 @@ body.dark footer p a:hover {
 }
 
 .indexChartBottomArea.dark .left .bottomArea .inner #indexTopTraded .singleItem img {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .indexChartBottomArea.dark .left .bottomArea .inner #indexTopTraded .singleItem .right {
@@ -4173,7 +4174,7 @@ body.dark footer p a:hover {
   .indexChartBottomArea .left .bottomArea .inner #indexMostProftableTrades table tr td {
     padding: 1.5rem .2rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .indexChartBottomArea .left .bottomArea .inner #indexMostProftableTrades table tr td div {
     display: -webkit-box;
@@ -4198,7 +4199,7 @@ body.dark footer p a:hover {
   }
   .indexChartBottomArea .left .bottomArea .inner #indexMostProftableTrades table tr td div span {
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .indexChartBottomArea .left .bottomArea .inner #indexMostProftableTrades table tr td .badge {
     color: #f06111;
@@ -4209,7 +4210,7 @@ body.dark footer p a:hover {
     -moz-border-radius: .3rem;
     -ms-border-radius: .3rem;
     -o-border-radius: .3rem;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .indexChartBottomArea .left .bottomArea .inner #indexMostProftableTrades table tr:last-child {
     border: none;
@@ -4356,9 +4357,8 @@ body.dark footer p a:hover {
         justify-content: space-around;
   }
   .indexChartBottomArea .left .bottomArea .inner #indexTopTraded .singleItem .right h3 {
-    font-weight: 700;
-    font-size: 1.8rem;
-    color: black;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
   }
   .indexChartBottomArea .left .bottomArea .inner #indexTopTraded .singleItem .right p {
     font-weight: 500;
@@ -4731,6 +4731,10 @@ body.dark footer p a:hover {
   .indexChartBottomArea .right .inner.fadeAnimation {
     animation: myFadeAnimation .3s linear infinite;
     -webkit-animation: myFadeAnimation .3s linear infinite;
+  }
+  .indexChartBottomArea.dark .left .bottomArea .inner #indexTopTraders .singleItem {
+    width: 49%;
+    margin-bottom: 1.7rem;
   }
 }
 
@@ -6240,6 +6244,15 @@ body.dark footer p a:hover {
   }
   #compititionsPagination.dark .wrapper a:not(:last-child) {
     margin-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 577px) {
+  #compititionsPagination.dark {
+    margin-top: 2rem;
+  }
+  #compititionsPagination {
+    margin-top: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

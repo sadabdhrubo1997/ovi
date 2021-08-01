@@ -1282,7 +1282,7 @@
             display: block;
         }
 
-        .mobileTable.dark{
+        .mobileTable.dark {
             display: block;
         }
 
@@ -1508,4 +1508,21 @@
             }
         }
     }
+}
+
+
+
+@media only screen and (max-width: 577px) {
+
+
+
+    #compititionsPagination.dark {
+        margin-top: 2rem;
+    }
+    #compititionsPagination {
+        margin-top: 2rem;
+    }
+
+
+
 }
