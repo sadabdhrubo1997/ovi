@@ -45,8 +45,9 @@ footer {
 
 
     p {
-          font-size: 1.6rem;
-          font-weight: 400;
+        font-size: 1.6rem;
+        font-weight: 400;
+
         a {
             text-decoration: none;
             color: rgba(0, 0, 0, 0.5);
@@ -55,8 +56,8 @@ footer {
             -moz-transition: .2s;
             -ms-transition: .2s;
             -o-transition: .2s;
-              font-size: 1.6rem;
-              font-weight: 400;
+            font-size: 1.6rem;
+            font-weight: 400;
 
             &:hover {
                 color: rgb(0, 0, 0);
@@ -125,7 +126,18 @@ body.dark {
 
 
 //responsive issue fixing code
+/*
+@media only screen and (max-width: 768px) {
+    #mainbody {
+        padding: 8rem 2rem 1rem 21.5rem;
+    }
 
+    #mainbody.expand {
+        padding: 8rem 2rem 1rem 8rem;
+    }
+
+}
+*/
 @media only screen and (max-width: 577px) {
     #mainbody {
         padding: 7.5rem 1.5rem;
@@ -133,7 +145,7 @@ body.dark {
     }
 
     footer {
-        justify-content: center  !important;
+        justify-content: center !important;
         margin-top: 2rem !important;
 
         p {

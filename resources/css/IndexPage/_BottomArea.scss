@@ -12,7 +12,7 @@
     -o-transition: .2s;
 
     .left {
-        width: 49%;
+        width: 49.5%;
 
         .filterArea {
             padding: 1.1rem;
@@ -972,8 +972,8 @@
                             flex-direction: column;
                             justify-content: space-around;
 
-                          
-                            
+
+
 
                             h3 {
                                 font-weight: 700;
@@ -1311,7 +1311,63 @@
     }
 }
 
+/*
+@media only screen and (max-width: 768px) {
+    .indexChartBottomArea {
+        margin-top: 1.5rem;
 
+        .left {
+            .filterArea {
+                padding: .7rem;
+                margin-bottom: 1rem;
+
+
+                button {
+                    padding: 1rem 2rem;
+                    border-radius: .6rem;
+                    -webkit-border-radius: .6rem;
+                    -moz-border-radius: .6rem;
+                    -ms-border-radius: .6rem;
+                    -o-border-radius: .6rem;
+                    font-size: 1.2rem;
+                }
+            }
+
+            .bottomArea{
+                .inner{
+                    #indexMostProftableTrades{
+                        table{
+                            font-size: 1.3rem;
+
+                            tr{
+                                td{
+                                    padding: 1.2rem;
+
+                                    div{
+
+                                        img{
+                                            width: 2.5rem;
+                                        }
+
+                                        img.small{
+                                            width: 1.6rem;
+                                            margin-top: 0.3rem;
+                                        }
+                                        .arrow {
+                                            width: 2.8rem;
+                                            margin-right: 0.6rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+*/
 @media only screen and (max-width: 577px) {
     .indexChartBottomArea {
 

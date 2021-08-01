@@ -19,6 +19,16 @@ if (iw <= 1366) {
     html.setAttribute("style", `font-size:${currentFontSize}%`);
 }
 
+if (iw < 1366 && iw > 576) {
+    let currentFontSize = (rootFontPercentage * iw) / rootScreenWidth;
+    html.setAttribute("style", `font-size:${currentFontSize}%`);
+}
+
+if (iw < 576) {
+    let currentFontSize = (rootFontPercentage * iw) / 375;
+    html.setAttribute("style", `font-size:${currentFontSize}%`);
+}
+
 
 
 window.addEventListener("resize", function () {
@@ -32,6 +42,16 @@ window.addEventListener("resize", function () {
 
     } else {
         let currentFontSize = (rootFontPercentage * iw) / rootScreenWidth;
+        html.setAttribute("style", `font-size:${currentFontSize}%`);
+    }
+
+    if (iw < 1366 && iw > 576) {
+        let currentFontSize = (rootFontPercentage * iw) / rootScreenWidth;
+        html.setAttribute("style", `font-size:${currentFontSize}%`);
+    }
+
+    if (iw < 576) {
+        let currentFontSize = (rootFontPercentage * iw) / 375;
         html.setAttribute("style", `font-size:${currentFontSize}%`);
     }
 
