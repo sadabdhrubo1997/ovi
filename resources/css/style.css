@@ -125,10 +125,10 @@ body.dark footer p a:hover {
 */
 @media only screen and (max-width: 577px) {
   #mainbody {
-    padding: 7.5rem 1.5rem;
+    padding: 11.5rem 1.5rem;
   }
   #mainbody.expand {
-    padding: 7.5rem 1.5rem;
+    padding: 11.5rem 1.5rem;
   }
   footer {
     -webkit-box-pack: center !important;
@@ -1098,7 +1098,7 @@ body.dark footer p a:hover {
     right: 0;
     background-color: white;
     width: 100%;
-    height: 6rem;
+    height: 10rem;
     z-index: 9999999999;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1153,11 +1153,11 @@ body.dark footer p a:hover {
         -ms-flex-align: center;
             align-items: center;
     background-color: rgba(192, 192, 192, 0.11);
-    width: 25rem;
+    width: 28rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: .4rem;
+    padding: 1.5rem 1rem;
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -1165,8 +1165,8 @@ body.dark footer p a:hover {
     -o-border-radius: .5rem;
   }
   #mobileTopBar .right .mobileSearch svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     margin-right: .5rem;
   }
   #mobileTopBar .right .mobileSearch svg path {
@@ -1177,11 +1177,11 @@ body.dark footer p a:hover {
     border: none;
     background: none;
     width: calc(100% - 4rem);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   #mobileTopBar .right .hambarger {
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: .6rem;
     -webkit-border-radius: .6rem;
     -moz-border-radius: .6rem;
@@ -1316,12 +1316,12 @@ body.dark footer p a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: rgba(255, 255, 255, 0.11);
-    width: 25rem;
+    background-color: rgba(160, 160, 160, 0.11);
+    width: 28rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: .4rem;
+    padding: 1.5rem 1rem;
     border-radius: .5rem;
     -webkit-border-radius: .5rem;
     -moz-border-radius: .5rem;
@@ -1329,8 +1329,8 @@ body.dark footer p a:hover {
     -o-border-radius: .5rem;
   }
   #mobileTopBar.dark .right .mobileSearch svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 3rem;
+    height: 3rem;
     margin-right: .5rem;
   }
   #mobileTopBar.dark .right .mobileSearch svg path {
@@ -1341,7 +1341,7 @@ body.dark footer p a:hover {
     border: none;
     background: none;
     width: calc(100% - 4rem);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #fff;
   }
   #mobileTopBar.dark h2 {
