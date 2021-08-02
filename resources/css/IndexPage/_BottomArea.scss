@@ -83,6 +83,10 @@
                 }
             }
 
+            #indexTopTrdersBtn{
+                left: 0;
+            }
+
             button.active {
                 &::after {
                     opacity: 1;
@@ -406,6 +410,12 @@
                     opacity: 0;
                 }
             }
+
+            #indexCompletedCompetitionBtn{
+                right: 0;
+            }
+
+          
 
             button.active {
                 &::after {
@@ -1406,7 +1416,7 @@
                     -o-transition: .3s;
                     background: none;
                     font-weight: 700;
-                    font-size: 1.6rem;
+                    font-size: 2rem;
                     cursor: pointer;
                     display: inline-flex;
                     align-items: center;
@@ -1421,7 +1431,7 @@
                         -moz-transition: .3s;
                         -ms-transition: .3s;
                         -o-transition: .3s;
-                        font-size: 1.4rem;
+                        font-size: 1.8rem;
                     }
 
                     &::after {
@@ -1442,6 +1452,10 @@
                         -o-transition: .3s;
                         opacity: 0;
                     }
+                }
+
+                #indexTopTrdersBtn{
+                    left: -3rem;
                 }
 
                 button.active {
@@ -1472,22 +1486,33 @@
                         table {
                             width: 100%;
                             border-collapse: collapse;
-                            font-size: 1.8rem;
+                            font-size: 2rem;
                             font-weight: 500;
                             color: #000000;
 
                             tr {
                                 border-bottom: .1rem solid rgba(0, 0, 0, 0.05);
 
+                                td:nth-child(2){
+                                    padding-left: 4rem;
+                                }
+                                td:nth-child(3){
+                                    padding-left: 3rem;
+                                   
+                                }
+                                
+
                                 td {
                                     padding: 1.5rem .2rem;
-                                    text-align: center;
+                                    text-align: left;
                                     font-size: 1.6rem;
 
                                     div {
                                         display: flex;
                                         align-items: center;
                                         font-weight: 500;
+                                        padding-left: .3rem;
+
 
                                         img {
                                             width: 2rem !important;
@@ -1506,7 +1531,7 @@
 
                                         span {
                                             font-weight: 500;
-                                            font-size: 1.5rem;
+                                            font-size: 1.6rem;
                                         }
 
                                     }
@@ -1520,8 +1545,13 @@
                                         -moz-border-radius: .3rem;
                                         -ms-border-radius: .3rem;
                                         -o-border-radius: .3rem;
-                                        font-size: 1.5rem;
+                                        font-size: 1.6rem;
                                     }
+                                }
+
+                                td:nth-child(4){
+                                   text-align: right;
+                                   padding-right: 2rem;
                                 }
                             }
 
@@ -1561,19 +1591,19 @@
                             .time {
                                 color: rgba(0, 0, 0, 0.4);
                                 font-weight: 500;
-                                font-size: 1.2rem;
+                                font-size: 1.4rem;
                                 margin-bottom: 0.5rem;
                             }
 
                             .name {
                                 font-weight: 500;
-                                font-size: 1.6rem;
+                                font-size: 1.8rem;
                                 color: rgb(0, 0, 0);
                                 margin-bottom: 1rem;
                             }
 
                             .trades {
-                                font-size: 1.6rem;
+                                font-size: 1.8rem;
                                 font-weight: 400;
                                 color: rgb(0, 0, 0);
                                 display: flex;
@@ -1604,7 +1634,7 @@
                                 border: .1rem solid rgba(240, 97, 17, 1);
                                 color: rgba(240, 97, 17, 1);
                                 text-decoration: none;
-                                font-size: 1.4rem;
+                                font-size: 1.6rem;
                                 font-weight: 400;
                                 border-radius: .6rem;
                                 -webkit-border-radius: .6rem;
@@ -1725,7 +1755,7 @@
                     -o-transition: .3s;
                     background: none;
                     font-weight: 700;
-                    font-size: 1.6rem;
+                    font-size: 2rem;
                     cursor: pointer;
                     display: inline-flex;
                     align-items: center;
@@ -1740,7 +1770,7 @@
                         -moz-transition: .3s;
                         -ms-transition: .3s;
                         -o-transition: .3s;
-                        font-size: 1.3rem;
+                        font-size: 1.6rem;
                     }
 
                     &::after {
@@ -1761,6 +1791,10 @@
                         -o-transition: .3s;
                         opacity: 0;
                     }
+                }
+
+                #indexCompletedCompetitionBtn{
+                    right: -3rem;
                 }
 
                 button.active {
@@ -1787,7 +1821,7 @@
 
                     .table {
                         width: 100%;
-                        font-size: 1.8rem;
+                        font-size: 2rem;
                         font-weight: 500;
                         color: #000000;
                         padding-bottom: .7rem;
@@ -1799,18 +1833,21 @@
                             border-bottom: .1rem solid rgba(0, 0, 0, 0.05);
                             padding: 1.7rem 0;
 
+                            
+
                             .td {
                                 display: flex;
                                 align-items: center;
                                 font-weight: 700;
 
                                 img {
-                                    width: 4.2rem;
+                                    width: 2.2rem;
                                     margin-right: 1.5rem;
                                 }
                             }
 
                             .progress {
+                                margin-left: -5rem;
                                 .badge {
                                     background-color: rgba(37, 150, 231, 0.1);
                                     color: rgba(37, 150, 231, 1);
@@ -1866,7 +1903,7 @@
 
                     .table {
                         width: 100%;
-                        font-size: 1.8rem;
+                        font-size: 2rem;
                         font-weight: 500;
                         color: #000000;
                         padding-bottom: .7rem;
@@ -1945,7 +1982,7 @@
 
                     .table {
                         width: 100%;
-                        font-size: 1.8rem;
+                        font-size: 2rem;
                         font-weight: 500;
                         color: #000000;
                         padding-bottom: .7rem;
@@ -2025,6 +2062,15 @@
         .left {
             .bottomArea {
                 .inner {
+                    #indexMostProftableTrades{
+                        table{
+                            tr{
+                                td{
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                    }
                     #indexTopTraders {
                         .singleItem {
                             width: 49%;

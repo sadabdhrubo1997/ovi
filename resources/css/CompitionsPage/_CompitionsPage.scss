@@ -21,7 +21,7 @@
 
 
             .row {
-                padding: 1rem;
+                padding: 1.2rem;
                 width: 100%;
                 display: flex;
                 justify-content: space-between;
@@ -29,14 +29,14 @@
 
                 .left {
                     color: rgba(0, 0, 0, 0.4);
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                     align-items: center;
                     display: flex;
                 }
 
                 .right {
                     color: rgb(0, 0, 0);
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                     display: flex;
                     align-items: center;
                     height: auto;
@@ -73,7 +73,7 @@
                             position: relative;
 
                             img {
-                                width: 1.4rem;
+                                width: 2rem;
                             }
 
                             .popupElement {
@@ -122,7 +122,7 @@
                                             display: flex;
                                             justify-content: center;
                                             align-items: center;
-                                            font-size: 1.4rem;
+                                            font-size: 1.6rem;
                                             margin-right: 1rem;
                                         }
 
@@ -209,14 +209,14 @@
 
                 .left {
                     color: rgba(255, 255, 255, 0.4);
-                    font-size: 2rem;
+                    font-size: 2.2rem;
                     align-items: center;
                     display: flex;
                 }
 
                 .right {
                     color: rgb(255, 255, 255);
-                    font-size: 1.8rem;
+                    font-size: 2.2rem;
                     display: flex;
                     align-items: center;
                     height: auto;
@@ -240,7 +240,7 @@
                         display: flex;
                         align-items: center;
                         color: rgba(240, 97, 17, 1);
-                        font-size: 2rem;
+                        font-size: 1.8rem;
 
                         button {
                             outline: none;
@@ -277,7 +277,7 @@
                                     padding: 1.5rem;
                                     color: #ffffff;
                                     text-align: left;
-                                    font-size: 2.2rem;
+                                    font-size: 2rem;
                                     border-bottom: .1rem solid rgba(255, 255, 255, 0.05);
                                 }
 
@@ -329,7 +329,7 @@
 
                     .completed {
                         padding: .6rem 1.2rem;
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                         background: rgba(26, 216, 91, 0.1);
                         color: rgb(26, 216, 92);
                         margin-right: 1.5rem;
@@ -345,7 +345,7 @@
                         text-decoration: none;
                         border: .1rem solid rgba(240, 97, 17, 1);
                         padding: .5rem 1.2rem;
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                         color: rgba(240, 97, 17, 1);
                         border-radius: .6rem;
                         -webkit-border-radius: .6rem;
@@ -959,23 +959,9 @@
     background-color: rgba(28, 29, 35, 1);
 
 
-
-
-
-
-
-
-
-
-
-
     .table {
         width: 100%;
         background-color: rgba(28, 29, 35, 1);
-
-
-
-
 
 
         .thead {
@@ -1265,7 +1251,7 @@
 
     #compititionsPageWrapper {
         width: 100%;
-        padding: 1rem;
+        padding: 1.5rem;
         border-radius: .6rem;
         -webkit-border-radius: .6rem;
         -moz-border-radius: .6rem;
@@ -1301,7 +1287,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 5rem;
+        margin-top: 6rem;
 
         .wrapper {
             padding: .5rem;
@@ -1323,7 +1309,7 @@
                 -o-border-radius: .3rem;
                 width: 4rem;
                 height: 4rem;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
                 text-decoration: none;
                 color: #000000;
                 font-weight: 400;
@@ -1431,7 +1417,7 @@
                 -o-border-radius: .3rem;
                 width: 4rem;
                 height: 4rem;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
                 text-decoration: none;
                 color: #ffffff;
                 font-weight: 400;
@@ -1511,14 +1497,6 @@
 }
 
 
-
-
-// responsive for tablate devices
-@media only screen and (max-width: 1024px) {
-
-    
-
-}
 
 
 

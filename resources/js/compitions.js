@@ -6,57 +6,44 @@ if (!localStorage.getItem("sidebarCollupsed")) {
     localStorage.setItem("sidebarCollupsed", "true")
 }
 
-// Responsive html font size
+window.addEventListener("load", ()=>{
+    // Responsive html font size
 let iw = window.innerWidth;
 let rootScreenWidth = 1366;
 let rootFontPercentage = 44.46;
 let html = document.querySelector("html")
 
-if (iw <= 1366) {
-    html.setAttribute("style", `font-size:${rootFontPercentage}%`);
 
-} else {
+if(iw <577){
+    let currentFontSize = (rootFontPercentage * iw) / 520;
+    html.setAttribute("style", `font-size:${currentFontSize}%`);
+}else{
+    console.log("window object ......")
     let currentFontSize = (rootFontPercentage * iw) / rootScreenWidth;
     html.setAttribute("style", `font-size:${currentFontSize}%`);
-}
 
-if (iw < 1366 && iw > 576) {
-    let currentFontSize = (rootFontPercentage * iw) / rootScreenWidth;
-    html.setAttribute("style", `font-size:${currentFontSize}%`);
 }
-
-if (iw < 576) {
-    let currentFontSize = (rootFontPercentage * iw) / 375;
-    html.setAttribute("style", `font-size:${currentFontSize}%`);
-}
-
+})
 
 
 window.addEventListener("resize", function () {
-    let iw = window.innerWidth;
-    let rootScreenWidth = 1366;
-    let rootFontPercentage = 44.46;
+    let IW = window.innerWidth;
+    let rootScreenWidth2 = 1366;
+    let rootFontPercentage2 = 44.46;
     let html = document.querySelector("html")
 
-    if (iw <= 1366) {
-        html.setAttribute("style", `font-size:${rootFontPercentage}%`);
-
-    } else {
-        let currentFontSize = (rootFontPercentage * iw) / rootScreenWidth;
-        html.setAttribute("style", `font-size:${currentFontSize}%`);
+    if(IW <577){
+        let currentFontSize2 = (rootFontPercentage2 * IW) / 520;
+        html.setAttribute("style", `font-size:${currentFontSize2}%`);
+    }else{
+        let currentFontSize2 = (rootFontPercentage2 * IW) / rootScreenWidth2;
+        html.setAttribute("style", `font-size:${currentFontSize2}%`);
+    
     }
-
-    if (iw < 1366 && iw > 576) {
-        let currentFontSize = (rootFontPercentage * iw) / rootScreenWidth;
-        html.setAttribute("style", `font-size:${currentFontSize}%`);
-    }
-
-    if (iw < 576) {
-        let currentFontSize = (rootFontPercentage * iw) / 375;
-        html.setAttribute("style", `font-size:${currentFontSize}%`);
-    }
+    
 
 })
+
 
 
 //sidebar 
@@ -276,23 +263,11 @@ dotMenuIcon.addEventListener("blur", function (e) {
 */
 
 
-// mobile search
-let mobileSearch = document.querySelector("#mobileSearch")
-let mobileSearchBox = document.querySelector("#mobileSearchBox")
-let mobileSearchBoxCross = document.querySelector("#mobileSearchBoxCross")
 
 
 
 // mobile side menu
 let mobileHamberger = document.querySelector("#mobileHamberger")
-
-mobileSearch.addEventListener("click", function () {
-    mobileSearchBox.classList.add("show")
-})
-
-mobileSearchBoxCross.addEventListener("click", function () {
-    mobileSearchBox.classList.remove("show")
-})
 
 
 
