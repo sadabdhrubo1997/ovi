@@ -149,6 +149,33 @@ body {
 
                 .td.six {
                     width: 20.43%;
+
+                    a {
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.4);
+                        display: flex;
+                        align-items: center;
+
+                        svg {
+                            width: 1rem;
+                            margin-left: 1.1rem;
+
+                            path {
+                                fill: rgb(0, 0, 0);
+                            }
+                        }
+
+                        svg.up {
+                            transform: rotate(180deg);
+                            -webkit-transform: rotate(180deg);
+                            -moz-transform: rotate(180deg);
+                            -ms-transform: rotate(180deg);
+                            -o-transform: rotate(180deg);
+                        }
+
+                    }
+
+
                 }
 
                 .td.seven {
@@ -190,6 +217,20 @@ body.dark {
             .tr {
                 .td {
                     color: #fff;
+
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                        display: flex;
+                        align-items: center;
+
+                        svg {
+                            path {
+                                fill: #fff;
+                            }
+                        }
+
+                    }
                 }
             }
 
@@ -218,6 +259,18 @@ body.dark {
 
                     .right {
                         color: #fff;
+                    }
+                }
+
+                .row.red {
+                    .right {
+                        color: rgba(231, 54, 37, 1);
+                    }
+                }
+
+                .row.green {
+                    .right {
+                        color: rgba(26, 216, 91, 1);
                     }
                 }
             }

@@ -6958,6 +6958,34 @@ body #cryptocurrencyPageWrapper .table .tr .td.six {
   width: 20.43%;
 }
 
+body #cryptocurrencyPageWrapper .table .tr .td.six a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.six a svg {
+  width: 1rem;
+  margin-left: 1.1rem;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.six a svg path {
+  fill: black;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.six a svg.up {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
 body #cryptocurrencyPageWrapper .table .tr .td.seven {
   width: 7%;
 }
@@ -6991,6 +7019,21 @@ body.dark #cryptocurrencyPageWrapper .table .tr .td {
   color: #fff;
 }
 
+body.dark #cryptocurrencyPageWrapper .table .tr .td a {
+  text-decoration: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.dark #cryptocurrencyPageWrapper .table .tr .td a svg path {
+  fill: #fff;
+}
+
 body.dark #cryptocurrencyPageWrapper .table .tr.head .td {
   font-size: 1.6rem;
   color: rgba(255, 255, 255, 0.4);
@@ -7011,6 +7054,14 @@ body.dark #cryptocurrencyPageWrapper .mobileTable .single .row .left {
 
 body.dark #cryptocurrencyPageWrapper .mobileTable .single .row .right {
   color: #fff;
+}
+
+body.dark #cryptocurrencyPageWrapper .mobileTable .single .row.red .right {
+  color: #e73625;
+}
+
+body.dark #cryptocurrencyPageWrapper .mobileTable .single .row.green .right {
+  color: #1ad85b;
 }
 
 @media only screen and (max-width: 577px) {
