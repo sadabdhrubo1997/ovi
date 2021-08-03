@@ -125,6 +125,13 @@ body {
                         height: auto;
                         margin-right: 1rem;
                     }
+
+                    .dotImageLight{
+                        display: block;
+                    }
+                    .dotImageDark{
+                        display: none;
+                    }
                 }
 
                 .td.one {
@@ -215,12 +222,14 @@ body.dark {
             background-color: rgba(28, 29, 35, 1);
 
             .tr {
+                border-bottom: .1rem solid rgba(255, 255, 255, 0.05);
+
                 .td {
                     color: #fff;
 
                     a {
                         text-decoration: none;
-                        color: #fff;
+                        color: rgba(255, 255, 255, 0.4);
                         display: flex;
                         align-items: center;
 
@@ -230,6 +239,13 @@ body.dark {
                             }
                         }
 
+                    }
+
+                    .dotImageLight{
+                        display: none;
+                    }
+                    .dotImageDark{
+                        display: block;
                     }
                 }
             }
@@ -253,6 +269,9 @@ body.dark {
                 }
 
                 .row {
+                    border-bottom: .1rem solid rgba(255, 255, 255, 0.03);
+
+
                     .left {
                         color: rgba(255, 255, 255, 0.4);
                     }
@@ -272,6 +291,10 @@ body.dark {
                     .right {
                         color: rgba(26, 216, 91, 1);
                     }
+                }
+
+                .row:last-child {
+                    border: none;
                 }
             }
         }
