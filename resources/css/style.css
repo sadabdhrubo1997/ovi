@@ -6081,7 +6081,6 @@ body.dark footer p a:hover {
   -moz-border-radius: .8rem;
   -ms-border-radius: .8rem;
   -o-border-radius: .8rem;
-  border: 0.1rem solid rgba(0, 0, 0, 0.05);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6185,7 +6184,6 @@ body.dark footer p a:hover {
   -moz-border-radius: .8rem;
   -ms-border-radius: .8rem;
   -o-border-radius: .8rem;
-  border: 0.1rem solid rgba(255, 255, 255, 0.05);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6601,7 +6599,6 @@ body.dark footer p a:hover {
     -moz-border-radius: .8rem;
     -ms-border-radius: .8rem;
     -o-border-radius: .8rem;
-    border: 0.1rem solid rgba(0, 0, 0, 0.05);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6704,7 +6701,6 @@ body.dark footer p a:hover {
     -moz-border-radius: .8rem;
     -ms-border-radius: .8rem;
     -o-border-radius: .8rem;
-    border: 0.1rem solid rgba(255, 255, 255, 0.05);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -6798,6 +6794,231 @@ body.dark footer p a:hover {
   }
   #compititionsPagination {
     margin-top: 2rem;
+  }
+}
+
+body #cryptocurrencyPageWrapper {
+  width: 100%;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable {
+  display: none;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  border-radius: .8rem;
+  -webkit-border-radius: .8rem;
+  -moz-border-radius: .8rem;
+  -ms-border-radius: .8rem;
+  -o-border-radius: .8rem;
+  background-color: #fff;
+  padding-bottom: 1rem;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single .head {
+  padding: 2rem 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.8rem;
+  color: black;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.03);
+  font-weight: 400;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single .head img {
+  margin-right: 1rem;
+  width: 4rem;
+  height: auto;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.03);
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single .row .left {
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 2.6rem;
+  text-align: left;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single .row .right {
+  color: black;
+  font-size: 2.6rem;
+  text-align: right;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single .row:last-child {
+  border: none;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single .row.red .right {
+  color: #e73625;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single .row.green .right {
+  color: #1ad85b;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single:last-child {
+  margin-bottom: 3rem;
+}
+
+body #cryptocurrencyPageWrapper .table {
+  width: 100%;
+  padding-bottom: 2rem;
+  background-color: white;
+  border-radius: 1.2rem;
+  -webkit-border-radius: 1.2rem;
+  -moz-border-radius: 1.2rem;
+  -ms-border-radius: 1.2rem;
+  -o-border-radius: 1.2rem;
+}
+
+body #cryptocurrencyPageWrapper .table .tr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 2.5rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.05);
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 400;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td img.symbol {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1.3rem;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td img.icon {
+  width: 1rem;
+  height: auto;
+  margin-right: 1rem;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.one {
+  width: 18.21%;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.two {
+  width: 19.60%;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.three {
+  width: 18.80%;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.four {
+  width: 20%;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.five {
+  width: 16.33%;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.six {
+  width: 20.43%;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.seven {
+  width: 7%;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.red {
+  color: #f63b31;
+}
+
+body #cryptocurrencyPageWrapper .table .tr .td.green {
+  color: #1ad85b;
+}
+
+body #cryptocurrencyPageWrapper .table .tr.head .td {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+body #cryptocurrencyPageWrapper .table .tr:last-child {
+  border: none;
+}
+
+body.dark #cryptocurrencyPageWrapper {
+  width: 100%;
+}
+
+body.dark #cryptocurrencyPageWrapper .table {
+  background-color: #1c1d23;
+}
+
+body.dark #cryptocurrencyPageWrapper .table .tr .td {
+  color: #fff;
+}
+
+body.dark #cryptocurrencyPageWrapper .table .tr.head .td {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+body.dark #cryptocurrencyPageWrapper .mobileTable .single {
+  background-color: #1c1d23;
+}
+
+body.dark #cryptocurrencyPageWrapper .mobileTable .single .head {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark #cryptocurrencyPageWrapper .mobileTable .single .row .left {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+body.dark #cryptocurrencyPageWrapper .mobileTable .single .row .right {
+  color: #fff;
+}
+
+@media only screen and (max-width: 577px) {
+  body #cryptocurrencyPageWrapper .table {
+    display: none;
+  }
+  body #cryptocurrencyPageWrapper .mobileTable {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
