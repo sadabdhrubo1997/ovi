@@ -7067,6 +7067,10 @@ body.dark #cryptocurrencyPageWrapper .table .tr.head .td {
   color: rgba(255, 255, 255, 0.4);
 }
 
+body.dark #cryptocurrencyPageWrapper .table .tr:last-child {
+  border: none;
+}
+
 body.dark #cryptocurrencyPageWrapper .mobileTable .single {
   background-color: #1c1d23;
 }
