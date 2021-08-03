@@ -6847,6 +6847,14 @@ body #cryptocurrencyPageWrapper .mobileTable .single .head img {
   height: auto;
 }
 
+body #cryptocurrencyPageWrapper .mobileTable .single .head .dotImageLight {
+  display: block;
+}
+
+body #cryptocurrencyPageWrapper .mobileTable .single .head .dotImageDark {
+  display: none;
+}
+
 body #cryptocurrencyPageWrapper .mobileTable .single .row {
   width: 100%;
   display: -webkit-box;
@@ -7066,6 +7074,14 @@ body.dark #cryptocurrencyPageWrapper .mobileTable .single {
 body.dark #cryptocurrencyPageWrapper .mobileTable .single .head {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark #cryptocurrencyPageWrapper .mobileTable .single .head .dotImageLight {
+  display: none;
+}
+
+body.dark #cryptocurrencyPageWrapper .mobileTable .single .head .dotImageDark {
+  display: block;
 }
 
 body.dark #cryptocurrencyPageWrapper .mobileTable .single .row {

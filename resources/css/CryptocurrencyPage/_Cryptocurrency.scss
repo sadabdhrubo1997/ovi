@@ -41,6 +41,13 @@ body {
                         width: 4rem;
                         height: auto;
                     }
+
+                    .dotImageLight{
+                        display: block;
+                    }
+                    .dotImageDark{
+                        display: none;
+                    }
                 }
 
 
@@ -266,6 +273,14 @@ body.dark {
                 .head {
                     color: #fff;
                     border-color: rgba(255, 255, 255, 0.05);
+
+
+                    .dotImageLight{
+                        display: none;
+                    }
+                    .dotImageDark{
+                        display: block;
+                    }
                 }
 
                 .row {
